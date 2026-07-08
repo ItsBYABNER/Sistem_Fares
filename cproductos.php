@@ -3,14 +3,15 @@ require_once __DIR__ . '/conexion.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imgfares/facicon.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="./EstiloCssF/dcoloresf.css" >
+    <link rel="stylesheet" type="text/css" href="./EstiloCssF/dcoloresf.css">
     <script src="./Jscript/acciones_script.JS"></script>
-    <link rel="stylesheet" type="text/css" href="./EstiloCssF/diseñocssf.css" >
+    <link rel="stylesheet" type="text/css" href="./EstiloCssF/diseñocssf.css">
     <title>Inventario Fares</title>
     <script>
         function calcularPrecio() {
@@ -41,6 +42,7 @@ require_once __DIR__ . '/conexion.php';
         });
     </script>
 </head>
+
 <body>
     <header id="titulo1" class="fcolor-d5">
         <h1>Ediciones Fares</h1>
@@ -57,10 +59,10 @@ require_once __DIR__ . '/conexion.php';
             <li><a href="#">Principal</a></li>
             <li><a href="#">Libros</a></li>
             <li class="f-desplegable"><a href="#" class="btndespegable">Inventario</a>
-            <div class="cont-desplegable">
-                <a href="cproductos.php">Crear producto</a>
-                <a href="#">Consultar producto</a>
-            </div>
+                <div class="cont-desplegable">
+                    <a href="cproductos.php">Crear producto</a>
+                    <a href="#">Consultar producto</a>
+                </div>
             </li>
             <li><a href="#">Contacto</a></li>
         </ul>
@@ -70,34 +72,34 @@ require_once __DIR__ . '/conexion.php';
         <div id="contenedor-formulario" class="s-encabezado">
             <h2>Inventario</h2>
             <form action="guardar.php" method="post" enctype="multipart/form-data" autocomplete="off" class="fcolor-15">
-                
+
                 <div id="codnom">
                     <label class="codnom1"> Codigo:
                         <input type="text" name="codigo" id="codigo" pattern="[0-9]{3,}" placeholder="Ingresar solo números" class="campof" autofocus required>
                     </label>
-                
+
                     <label class="codnom1"> Producto:
                         <input type="text" name="nproducto" id="nproducto" pattern="[a-zA-Z\s]{3,100}" placeholder="Ingresar solo letras" class="campof" required>
                     </label>
                 </div>
 
-                <div  id="cospor">
-                    <label  class="codnom1"> Costo:
-                        <input type="text" name="costop" id="costop" pattern="[0-9]+(\.[0-9]+)?"  class="campof">
+                <div id="cospor">
+                    <label class="codnom1"> Costo:
+                        <input type="text" name="costop" id="costop" pattern="[0-9]+(\.[0-9]+)?" class="campof">
                     </label>
-              
-                    <label class="codnom1"  >Porcentaje de venta: 
-                        <input type="text" name="porcentajev" id="porcentajev" maxlength="3" size="4"  class="campof">
+
+                    <label class="codnom1">Porcentaje de venta:
+                        <input type="text" name="porcentajev" id="porcentajev" maxlength="3" size="4" class="campof">
                     </label>
                 </div>
 
                 <div id="prefecha">
-                    <label class="codnom1" >Fecha:
+                    <label class="codnom1">Fecha:
                         <input type="date" name="fecha_creacion" id="fecha_creacion" class="campof">
                     </label>
-               
+
                     <label class="codnom1"> Precio de Venta:
-                        <input type="text" name="pventa" id="pventa" readonly  class="campof">
+                        <input type="text" name="pventa" id="pventa" readonly class="campof">
                     </label>
                 </div>
 
@@ -106,7 +108,7 @@ require_once __DIR__ . '/conexion.php';
                 </div>
 
                 <div id="botonimg">
-                    <input type="file" name="simagen" id="simagen"  class="campof">
+                    <input type="file" name="simagen" id="simagen" class="campof">
                 </div>
 
                 <div>
@@ -121,5 +123,5 @@ require_once __DIR__ . '/conexion.php';
         <p>Derechos Reservados &copy; 2004-2023</p>
     </footer>
 </body>
-</html>
 
+</html>

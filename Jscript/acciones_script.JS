@@ -27,10 +27,10 @@ function mostrarpventa() {
 
         let costoNum = parseFloat(vcosto.value);
         let porcentajeNum = parseFloat(vporcentaje.value);
-        
- 
+
+
         if (!isNaN(costoNum) && !isNaN(porcentajeNum)) {
-      
+
             let calculo = calcularPorcentaje(costoNum, porcentajeNum);
 
             document.getElementById("pventa").value = calculo;
@@ -48,7 +48,7 @@ function mostrarImagen() {
     var verimagen = document.querySelector('img');
     var archivof = document.querySelector('input[type=file]').files[0];
     var leerarchivo = new FileReader();
-    leerarchivo.onload = function() {
+    leerarchivo.onload = function () {
         verimagen.src = leerarchivo.result;
     }
     if (archivof) {
