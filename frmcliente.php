@@ -1,12 +1,4 @@
-Aquí tienes la transcripción completa y exacta del código que aparece en las dos imágenes del libro.
 
-De acuerdo con tus preferencias, te presento primero la versión limpia y organizada con comentarios explicativos del flujo, y posteriormente la versión sin ningún tipo de comentario.
-
----
-
-### Versión 1: Con comentarios explicativos
-
-```php
 <?php require 'menu.php'; ?>
 <main class="w3-row-padding w3-container ">
     <div class="w3-col s6 w3-mobile w3-section ">
