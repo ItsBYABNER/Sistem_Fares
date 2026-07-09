@@ -36,5 +36,3 @@
     </div>
 </main>
 <?php require 'pie_pagina.php'; ?>
-
-```
